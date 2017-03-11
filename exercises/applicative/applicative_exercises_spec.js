@@ -22,7 +22,7 @@ describe("Applicative Exercises", function(){
     });
   });
 
-  it.skip('Exercise 4', function(){
+  it('Exercise 4', function(){
     assert.equal("toby vs sally", E.ex4.unsafePerformIO());
   });
 
