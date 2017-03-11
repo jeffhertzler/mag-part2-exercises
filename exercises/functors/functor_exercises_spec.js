@@ -8,7 +8,7 @@ describe("Functor Exercises", function(){
     assert.deepEqual(E.ex1(Identity.of(2)), Identity.of(3));
   });
 
-  it.skip('Exercise 2', function(){
+  it('Exercise 2', function(){
     var xs = Identity.of(['do', 'ray', 'me', 'fa', 'so', 'la', 'ti', 'do']);
     assert.deepEqual(E.ex2(xs), Identity.of('do'));
   });
