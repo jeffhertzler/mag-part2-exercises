@@ -34,7 +34,7 @@ describe("Functor Exercises", function(){
     assert.deepEqual(E.ex6({active: true, name: 'Theresa'}), Right.of('Welcome Theresa'));
   });
 
-  it.skip('Exercise 7', function(){
+  it('Exercise 7', function(){
     assert.deepEqual(E.ex7("fpguy99"), Right.of("fpguy99"));
     assert.deepEqual(E.ex7("..."), Left.of("You need > 3"));
   });
