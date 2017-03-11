@@ -20,7 +20,7 @@ describe("Monad Exercises", function(){
     });
   });
 
-  it.skip('Exercise 4', function(){
+  it('Exercise 4', function(){
     var getResult = either(_.identity, unsafePerformIO);
     assert.equal(getResult(E.ex4('notanemail')), 'invalid email');
     assert.equal(getResult(E.ex4('sleepy@grandpa.net')), 'emailed: sleepy@grandpa.net');
