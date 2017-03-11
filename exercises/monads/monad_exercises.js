@@ -1,6 +1,7 @@
 require('../../support');
 var Task = require('data.task');
 var _ = require('ramda');
+var path = require('path');
 
 // Exercise 1
 // ==========
@@ -36,7 +37,7 @@ var pureLog = function(x) {
   });
 }
 
-var ex2 = undefined;
+var ex2 = _.compose(_.chain(pureLog), _.map(_.compose(_.last, split(path.sep))), getFile);
 
 
 

@@ -9,7 +9,7 @@ describe("Monad Exercises", function(){
     assert.deepEqual(E.ex1(E.user), Maybe.of('Walnut St'));
   });
 
-  it.skip('Exercise 2', function(){
+  it('Exercise 2', function(){
     assert.equal(E.ex2(undefined).unsafePerformIO(), 'logged monad_exercises.js');
   });
 
