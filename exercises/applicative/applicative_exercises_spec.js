@@ -15,7 +15,7 @@ describe("Applicative Exercises", function(){
     assert.deepEqual(Maybe.of(null), E.ex2(Maybe.of(null), Maybe.of(3)));
   });
 
-  it.skip('Exercise 3', function(done){
+  it('Exercise 3', function(done){
     E.ex3.fork(console.log, function (html) {
       assert.equal("<div>Love them futures</div><li>This book should be illegal</li><li>Monads are like space burritos</li>", html);
       done();
