@@ -37,7 +37,7 @@ var pureLog = function(x) {
   });
 }
 
-var ex2 = _.compose(_.chain(pureLog), _.map(_.compose(_.last, split(path.sep))), getFile);
+var ex2 = _.compose(_.chain(_.compose(pureLog, _.last, split(path.sep))), getFile);
 
 
 
