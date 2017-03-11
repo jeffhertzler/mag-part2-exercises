@@ -13,7 +13,7 @@ describe("Functor Exercises", function(){
     assert.deepEqual(E.ex2(xs), Identity.of('do'));
   });
 
-  it.skip('Exercise 3', function(){
+  it('Exercise 3', function(){
     var user = { id: 2, name: "Albert" };
     assert.deepEqual(E.ex3(user), Maybe.of('A'));
   });
