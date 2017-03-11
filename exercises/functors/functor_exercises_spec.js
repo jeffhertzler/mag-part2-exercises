@@ -29,7 +29,7 @@ describe("Functor Exercises", function(){
     })
   });
 
-  it.skip('Exercise 6', function(){
+  it('Exercise 6', function(){
     assert.deepEqual(E.ex6({active: false, name: 'Gary'}), Left.of('Your account is not active'));
     assert.deepEqual(E.ex6({active: true, name: 'Theresa'}), Right.of('Welcome Theresa'));
   });
