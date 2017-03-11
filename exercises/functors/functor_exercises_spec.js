@@ -18,7 +18,7 @@ describe("Functor Exercises", function(){
     assert.deepEqual(E.ex3(user), Maybe.of('A'));
   });
 
-  it.skip('Exercise 4', function(){
+  it('Exercise 4', function(){
     assert.deepEqual(E.ex4("4"), Maybe.of(4));
   });
 
