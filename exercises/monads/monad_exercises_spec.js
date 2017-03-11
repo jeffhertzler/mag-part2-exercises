@@ -13,7 +13,7 @@ describe("Monad Exercises", function(){
     assert.equal(E.ex2(undefined).unsafePerformIO(), 'logged monad_exercises.js');
   });
 
-  it.skip('Exercise 3', function(done){
+  it('Exercise 3', function(done){
     E.ex3(13).fork(console.log, function (res) {
       assert.deepEqual(res.map(_.prop('post_id')), [13, 13]);
       done();

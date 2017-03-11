@@ -61,7 +61,7 @@ var getComments = function(i) {
   });
 }
 
-var ex3 = undefined;
+var ex3 = _.compose(_.chain(_.compose(getComments, _.prop('id'))), getPost);
 
 
 // Exercise 4
