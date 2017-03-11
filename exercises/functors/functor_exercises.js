@@ -51,7 +51,7 @@ var getPost = function (i) {
   });
 };
 
-var ex5 = undefined;
+var ex5 = _.compose(_.map(_.compose(_.toUpper, _.prop('title'))), getPost);
 
 
 
